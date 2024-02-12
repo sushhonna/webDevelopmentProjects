@@ -1,0 +1,12 @@
+<div class="body">
+    <div class="container p-5">
+        <h2 class="fw-bold text-center"> Real time charactor counter</h2>
+        <div class="text-area mt-3">
+            <textarea class="textarea" [(ngModel)]="enteredValues" name="textarea" id="textarea" (keyup)="countValue()" placeholder="Please write your text here" maxlength="50"></textarea>
+        </div>
+        <div class="char-count mt-3">
+            <p>Total Charactors :<span class="total">{{total}}</span></p>
+            <p>Remaining : <span class="remaining">{{remaining}}</span></p>
+        </div>
+    </div>
+</div>

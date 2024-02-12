@@ -1,0 +1,27 @@
+<div class="body">
+    
+    <div class="container">
+        <h1 class="text-warning"> Addition Application for Kids</h1>
+        <hr>
+        <h2 class="score" id="score">Score : {{scoreCount}}
+            <button class="clear" (click)="clearScore()">Clear Score</button>
+        </h2> <br>
+        <h3 class="fw-bold">What is {{num1}} + {{num2}} ?</h3> <br>
+        
+        <input [(ngModel)]='inputVal' type="text" name="inputVal" class="input" (keyup.enter)="submit()"
+            placeholder="Enter your answer" autofocus autocomplete="off">
+        <button class="sub-btn" (click)="submit()">Submit</button>
+        <div class="d-flex flex-row justify-content-between">
+            <button class="btn btn-info" (click)="mul()">Multiplication</button>
+            <button class="btn btn-warning" (click)="add()">Addition</button>
+            <button class="btn btn-danger" (click)="sub()">Substraction</button>
+        </div><br>
+
+
+        <!-- <span *ngIf="successMsg" class="text-danger">Congrats...</span><br> -->
+        <div class="msg">
+            <h4 *ngIf="successMsg" class="text-success">Congrats...</h4>
+            <h4 *ngIf="failureMsg" class="text-danger">Opppsssss, You are wrong...</h4>
+        </div>
+    </div>
+</div>

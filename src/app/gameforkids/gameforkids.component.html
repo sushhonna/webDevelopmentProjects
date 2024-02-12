@@ -1,0 +1,16 @@
+<div class="body">
+    <div class="container">
+        <h2>Rock Paper Scissors Game</h2>
+        <p>Choose your move :</p>
+        <div class="buttons">
+            <button id="rock" (click)="getValues()">&#x270A;</button>
+            <button id="paper" (click)="getValues()">&#x270B;</button>
+            <button id="scissors" (click)="getValues()">&#x270c;</button>
+        </div>
+        <p class="pt-3">{{msg}}</p>
+        <div class="score">
+            <p>Your Score : <span id="user-score">{{userScore}}</span></p>
+            <p>Computer Score : <span id="comp-score">{{computerScore}}</span></p>
+        </div>
+    </div>
+</div>

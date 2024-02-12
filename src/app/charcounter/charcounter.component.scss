@@ -1,0 +1,49 @@
+.body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(181, 181, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    height: 100vh;
+
+    .container {
+        background-color: rgb(219, 238, 250);
+        height: 45%;
+        width: 35%;
+        border: 1px solid black;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .textarea{
+        resize: none;
+        height: 100px;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        box-sizing: border-box;
+        border: solid 2px gray;
+    }
+
+    .char-count{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+
+        p{
+            font-size: 18px;
+            color: gray;
+        }
+        .total{
+            color: slateblue;
+        }
+        .remaining{
+            color: orangered;
+        }
+    }
+    
+
+}
